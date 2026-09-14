@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+    
+ 
+</head>
+<body>
+  <div class="container-principal">
+    <div class="recolhe-mais">
+        <img src="logo_melhorada.png" alt="Recolhe Mais - Menos lixo na rua. Mais cidade para todos.">
+    </div>
+    <div class="botoes">
+        <button type="button" class="btn-morador">Morador</button>
+        <button type="button" class="btn-empresa">Empresa</button>
+    </div>
+    <form method="post" class="formulario-cadastro"> 
+        <fieldset class="campos-morador">
+            <legend hidden>Dados do Morador</legend>
+        <label for="nome">Nome:</label> 
+        <input type="text" id="nome" name="nome" required> 
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required> 
+        <label for="cep">CEP:</label>
+    <input
+  type="text"
+  id="cep"
+  name="cep"
+  maxlength="9"
+  inputmode="numeric" 
+  pattern="\d{5}-?\d{3}" 
+  placeholder="00000-000"
+  title="Digite no formato 00000-000"
+  required
+>   
+<label for="bairro">Bairro:</label>
+<input type="text" id="bairro" name="bairro" required>   
+<label for="senha">Senha:</label> 
+<input type="password" id="senha" name="senha" required> 
+        </fieldset>
+        <fieldset class="campos-empresa" hidden>
+            <legend hidden>Dados da empresa</legend> 
+
+            <label for="razao-social">Razão social:</label>
+            <input type="text" id="razao-social" name="razaoSocial">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj" maxlength="18" inputmode="numeric" pattern="\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2}" placeholder="00.000.000/0000-00" title="Digite no formato 00.000.000/0000-00">
+            <label for="email-empresa">E-mail corporativo:</label>
+            <input type="email" id="email-empresa" name="emailEmpresa">
+            <label for="areas-atendidas">Áreas atendidas:</label>
+            <input type="text" id="areas-atendidas" name="areasAtendidas">
+            <label for="senha-empresa">Senha:</label>
+            <input type="password" id="senha-empresa" name="senhaEmpresa">
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+    </form>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>
