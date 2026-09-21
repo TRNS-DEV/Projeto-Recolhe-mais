@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --corPrincipal:#22D4FD;
+    --corFundo:#000000;
+    --fontTitulo:"krona One",sans-serif;
+    --fontPrincipal:"Montserrat",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(digital-technology-with-hexagonal-shapes/background.jpg);
+}
+/* Parte do sobre mim e o home*/
+.indice{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.indice a{
+    text-decoration: none;
+    font-family: var(--fontPrincipal);
+    color: var(--corPrincipal);
+    font-size: 1.5rem;
+}
+header{
+    padding: 20px;
+      box-shadow: inset -2px 1px 10px var(--corPrincipal);
+}
+.informacoes h1{
+    font-family: var(--fontTitulo);
+    color: var(--corPrincipal);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    padding: 0 0 0 10px;
+    
+}
+.informacoes p{
+    color: white;
+    font-family: var(--fontPrincipal);
+    margin-top: 10px;
+    margin: 0 0 0 10px;
+    margin-right: 10px;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+}
+.imagem img{
+    width: 400px;
+    margin: 0 0 10px 0;
+    margin-top: 10px;
+}
+/*Rodapé da pagina sobre mim*/
+.final{
+    background-color: #22D4FD;
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    font-family: var(--fontTitulo);
+}
+/*Botões de instagram e github*/
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px;
+}
+.redes a{
+    text-decoration: none;
+    background-color: #22D4FD;
+    color: #000000;
+    font-size: 30px;
+    font-family: var(--fontTitulo);
+    border:solid 6px var(--corPrincipal);
+    border-radius: 20px;
+}
